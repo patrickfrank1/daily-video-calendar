@@ -9,13 +9,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/entry.js',
+  entry: './src/js/index.js',
   output: {
-    filename: 'entry.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
-  },
-  externals: {
-    "./ext/ext.js" : "globalHello"
   },
   optimization: {
     minimize: true,
@@ -30,24 +27,17 @@ module.exports = {
       template: 'src/index.html',
       filename: 'index.html'
     }),
-    new CopyWebpackPlugin([
-      { 
-        from: path.resolve(__dirname,"src/ext")+'/ext.js',
-        to: './ext/ext.js',
-        toType: 'file'
-      }
-    ])
   ],
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         use: [
           {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env']
+              presets: ['@babel/preset-env', '@babel/preset-react']
             }
           }
         ]
