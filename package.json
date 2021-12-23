@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "daily-video-calendar",
   "version": "1.0.0",
-  "description": "Boilerplate setup with webpack, express, babel, eslint, jest",
+  "description": "A daily video calendar",
   "private": true,
   "main": "server.js",
   "browser": "./dist/index.html",
@@ -20,13 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/patrickfrank1/express-webpack-boilerplate"
+    "url": "https://github.com/patrickfrank1/daily-video-calendar"
   },
   "author": "Patrick Frank",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "babel-loader": "^8.2.3",
@@ -51,9 +50,6 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-react-app": "^3.1.2",
     "express": "^4.17.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
