@@ -1,14 +1,16 @@
-# express-webpack-babel-eslint-jsdoc-jest-scss
-Boilerplate for development environment with express, webpack, babel, eslint, jsdoc jest and scss.
-See it live at https://express-webpack-boilerplate.herokuapp.com/.
+# Daily Video Calendar
+
+This tiny app makes you share a YouTube video a day with you friends and random strangers. No cookies or tracking just a simple react app.
+
+Visit my implementation at [https://video-calendar-2022.herokuapp.com/](https://video-calendar-2022.herokuapp.com/)
 
 
 ## Install
 
 1. Clone the repo
 ``` bash
-git clone git@github.com:patrickfrank1/express-webpack-babel-eslint-jest-scss.git
-cd express-webpack-babel-eslint-jest-scss
+git clone git@github.com:patrickfrank1/daily-video-calendar
+cd daily-video-calendar
 ```
 2. Install dependencies from package.json
 ``` bash
