@@ -25,16 +25,23 @@ class App extends React.Component {
     this.setState({videoIndex: new_index});
   }
 
+  printSelectedDate = () => {
+    let selectedDate = new Date()
+    selectedDate.setDate((TODAY.getDate() + this.state.videoIndex - DAY_OF_YEAR));
+    return selectedDate.toLocaleDateString('de-DE');
+  }
+
   render() {
     return (
       <div>
         <div className='container'>
           <div className='left' onClick={this.countDown}>Previous</div>
+          <div className='middle'>{this.printSelectedDate()}</div>
           <div className='right' onClick={this.countUp}>Next</div>
           <iframe width="654" height="368" src={VIDEO_LINKS[this.state.videoIndex]} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>
         </div>
         <div className='footer'>
-          <span>Today is {TODAY.toLocaleString('de-DE')}.</span>
+          <span><a href="#" onClick={(e) => {e.preventDefault();this.setState({videoIndex: DAY_OF_YEAR});}}>Today is {TODAY.toLocaleString('de-DE')}.</a></span>
           <span>&copy; 2021, Patrick Frank</span>
           <span>Github: <a href="https://github.com/patrickfrank1/daily-video-calendar">https://github.com/patrickfrank1/daily-video-calendar</a></span>
         </div>

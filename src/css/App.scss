@@ -19,13 +19,27 @@ iframe {
   background-color: #f82424f1;
   left: 0px;
   top: 0px;
-  width: 50%;
-  height: 30px;
+  width: 35%;
+  height: 35px;
   color: white;
   font-size: large;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+}
+
+.middle {
+  position: absolute;
+  padding-top: 4px;
+  background-color: rgb(121, 121, 121);
+  left: 35%;
+  top: 0px;
+  width: 30%;
+  height: 35px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
 }
 
 .right {
@@ -34,8 +48,8 @@ iframe {
   background-color: #28ffe2d9;
   right: 0px;
   top: 0px;
-  width: 50%;
-  height: 30px;
+  width: 35%;
+  height: 35px;
   color: white;
   font-size: large;
   font-weight: bold;
