@@ -32,13 +32,22 @@ class App extends React.Component {
   }
 
   render() {
+    let renderMainElement;
+    if (TODAY.getFullYear() < 2022) {
+      renderMainElement = <div className='main'><span>Nice to see you here. This calendar is dedicated to the year 2022. Please check back on January 1st 2022.</span></div>;
+    } else if (TODAY.getFullYear() === 2022) {
+      renderMainElement = <iframe className='main' width="654" height="368" src={VIDEO_LINKS[this.state.videoIndex]} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>;
+    } else {
+      renderMainElement = <div className='main'><span>Oh snap, you just missed 2022! This calendar is dedicated to the year 2022. Please travel back in time.</span></div>
+    }
+
     return (
       <div>
         <div className='container'>
           <div className='left' onClick={this.countDown}>Previous</div>
           <div className='middle'>{this.printSelectedDate()}</div>
           <div className='right' onClick={this.countUp}>Next</div>
-          <iframe width="654" height="368" src={VIDEO_LINKS[this.state.videoIndex]} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>
+          {renderMainElement}
         </div>
         <div className='footer'>
           <span><a href="#" onClick={(e) => {e.preventDefault();this.setState({videoIndex: DAY_OF_YEAR});}}>Today is {TODAY.toLocaleString('de-DE')}.</a></span>
