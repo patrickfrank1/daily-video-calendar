@@ -1,6 +1,6 @@
 const VIDEO_LINKS = [
   'https://www.youtube.com/embed/jKMNSvpB9dY',
-  'https://www.youtube.com/embed/fbqHK8i-HdA',
+  'https://www.youtube.com/embed/Aarq1EGRz0E',
   'https://www.youtube.com/embed/FBWv55inXfc',
   'https://www.youtube.com/embed/awkLWuyDkE0',
   'https://www.youtube.com/embed/5LGEiIL1__s',
