@@ -12,7 +12,7 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'docs')
   },
   optimization: {
     minimize: true,
@@ -72,7 +72,7 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'docs'),
     port: 5000
   }
 };

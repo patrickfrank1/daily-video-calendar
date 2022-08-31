@@ -4,7 +4,7 @@
   "description": "A daily video calendar",
   "private": true,
   "main": "server.js",
-  "browser": "./dist/index.html",
+  "browser": "./docs/index.html",
   "engines": {
     "node": "12.14.x",
     "npm": "6.13.x"
@@ -13,7 +13,7 @@
     "test": "jest",
     "build:dev": "webpack-dev-server --open",
     "build:docs": "rm -rf documentation && ./node_modules/.bin/jsdoc -c jsdoc.config.js",
-    "build:prod": "rm -rf dist && webpack -p --progress",
+    "build:prod": "rm -rf docs && webpack -p --progress",
     "heroku-postbuild": "webpack -p --progress && npm run build:docs && npm run cleanup",
     "cleanup": "npm prune --production && rm -rf src test .eslintrc.js *.config.js README.md",
     "start": "node server.js"
