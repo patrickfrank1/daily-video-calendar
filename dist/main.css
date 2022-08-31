@@ -1,0 +1,4 @@
+html,body{overflow:hidden;width:100%;height:100%;margin:0;padding:0}
+
+.main{position:fixed;top:30px;left:0px;width:100%;height:100%;font-size:30px;font-weight:bold;text-align:center}.main span{position:relative;top:30%}.container{position:relative;height:100%;width:100%;background-color:#cccccc}.left{position:absolute;padding-top:4px;background-color:#f82424f1;left:0px;top:0px;width:35%;height:35px;color:white;font-size:large;font-weight:bold;text-align:center;cursor:pointer}.middle{position:absolute;padding-top:4px;background-color:#797979;left:35%;top:0px;width:30%;height:35px;color:white;font-size:large;font-weight:bold;text-align:center}.right{position:absolute;padding-top:4px;background-color:#28ffe2d9;right:0px;top:0px;width:35%;height:35px;color:white;font-size:large;font-weight:bold;text-align:center;cursor:pointer}.footer{background-color:#797979;color:white;padding:10px 0px;position:fixed;left:0px;bottom:0px;width:100%}.footer span{padding:0px 10px}
+
