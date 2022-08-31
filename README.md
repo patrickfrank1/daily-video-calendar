@@ -2,7 +2,7 @@
 
 This tiny app makes you share a YouTube video a day with you friends and random strangers. No cookies or tracking just a simple react app.
 
-Visit my implementation at [https://video-calendar-2022.herokuapp.com/](https://video-calendar-2022.herokuapp.com/)
+View my implementation at [https://patrickfrank1.github.io/daily-video-calendar/](https://patrickfrank1.github.io/daily-video-calendar/)
 
 
 ## Install
